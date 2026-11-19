@@ -2,7 +2,7 @@
 
 This work develops a non-intrusive reduced-order model (ROM) of the hourly near-surface atmosphere over Tamil Nadu, India, using ERA5-Land reanalysis data. The full state, consisting of five variables on 1065 land cells (5325 degrees of freedom), is compressed to ten modes by proper orthogonal decomposition (POD), which retains 92.1 percent of the snapshot energy. A quadratic manifold is compared with the linear POD subspace for reconstruction. The reduced dynamics are then learned from data by operator inference, in which a quadratic ordinary differential equation with known calendar forcing is fitted by regularised least squares and integrated with a fourth-order Runge-Kutta scheme. Two structural constraints are studied individually and jointly: an energy-preserving nonlinear term, enforced as a linear constraint on the quadratic operator, and a dissipative linear operator, enforced by decomposing it into a skew-symmetric part and a negative definite symmetric part. On the test period, the models with a dissipative linear operator remain bounded over a 30-day free run and give the lowest two-metre temperature error among the learned models at lead times from 3 to 36 hours, while the model with an energy-preserving nonlinear term alone does not remain bounded.
 
-**Index Terms:** reduced-order modeling, operator inference, proper orthogonal decomposition, quadratic manifold, energy-preserving dynamics, dissipative systems, ERA5-Land, regional weather forecasting, scientific machine learning.
+**Index Terms:** reduced order modeling, operator inference, proper orthogonal decomposition, quadratic manifold, energy-preserving dynamics, dissipative systems, ERA5-Land, regional weather forecasting, scientific machine learning.
 
 ---
 
